@@ -10,7 +10,7 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'helvetica Neue',
+    fontFamily: 'Helvetica Neue',
   },
 });
 
