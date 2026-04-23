@@ -16,6 +16,7 @@ const StyledHero = styled("div")(({ theme }) => ({
   height: "100vh",
   display: "flex",
   alignItems: "center",
+  overflow: "hidden",
 }));
 
 const StyledImg = styled("img")(({ theme }) => ({
@@ -97,7 +98,7 @@ const Hero = () => {
                 size={{ xs: 12, md: 4 }}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
-                <StyledButton>
+                <StyledButton onClick={()=>console.log("ola")}>
                   <DownloadIcon />
                   <Typography>Download CV</Typography>
                 </StyledButton>
@@ -110,7 +111,7 @@ const Hero = () => {
                 <StyledButton>
                   <MailIcon />
                   <Typography>Contact me</Typography>
-                </StyledButton>
+                </StyledButton>""
               </Grid>
             </Grid>
           </Grid>
