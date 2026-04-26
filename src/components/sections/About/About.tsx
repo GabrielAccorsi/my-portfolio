@@ -11,7 +11,7 @@ import theme from "../../../Theme";
 
 const StyledAbout = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.primary.contrastText,
-  height: "70vh",
+  minHeight: "70vh",
   display: "flex",
 }));
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -78,8 +78,8 @@ const About = () => {
           <Box sx={{ pb: 3, pt: 5, display: "flex", justifyContent: "center" }}>
             <Typography variant="h3">Skills</Typography>
           </Box>
-          <Box sx={{spacing: 2}}>
-            <Grid container spacing={2} sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ mb: 3}}>
+            <Grid container spacing={3} sx={{ display: "flex", justifyContent: "center" }}>
               {skillsSet.map((skill, index) => (
                 <Grid key={index} size={ {xs:5, sm:4, md:2 ,lg:2 } }>
                   <StyledCard variant="outlined">{skill}</StyledCard>
